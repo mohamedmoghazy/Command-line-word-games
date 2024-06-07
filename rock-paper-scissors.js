@@ -6,7 +6,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 const inputMap = ['&#9994', '&#9995', '&#9996'];
 
-const RookPaperScissors = ({
+const RockPaperScissors = ({
   rock: 0,
   paper: 1,
   scissors: 2
@@ -14,7 +14,7 @@ const RookPaperScissors = ({
 
 function getRandomHandSign()
 {
-  const values = Object.values(RookPaperScissors);
+  const values = Object.values(RockPaperScissors);
   const randomIndex = Math.floor(Math.random() * values.length);
   return values[randomIndex];
 }
@@ -32,9 +32,9 @@ function playGame(playerChoice)
     console.log('It\'s a tie!');
     score.ties += 1;
   }
-  else if ((playerChoice === RookPaperScissors.rock && computerChoice === RookPaperScissors.scissors) ||
-    (playerChoice === RookPaperScissors.paper && computerChoice === RookPaperScissors.rock) ||
-    (playerChoice === RookPaperScissors.scissors && computerChoice === RookPaperScissors.paper))
+  else if ((playerChoice === RockPaperScissors.rock && computerChoice === RockPaperScissors.scissors) ||
+    (playerChoice === RockPaperScissors.paper && computerChoice === RockPaperScissors.rock) ||
+    (playerChoice === RockPaperScissors.scissors && computerChoice === RockPaperScissors.paper))
   {
     console.log('You win!');
     document.getElementById('result').textContent = 'You win!';
