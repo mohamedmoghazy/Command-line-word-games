@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="rock-paper-scissors.js"></script>
+</head>
+
+<body>
+    <p class="title fade-element">Rock Paper Scissors</p>
+
+    <div class="buttons-container">
+        <button onclick="playGame(0)" class="input-button scale-element ">
+            <p class="button-icon">&#9994;</p>
+        </button>
+
+        <button onclick="playGame(1)" class="input-button scale-element ">
+            <p class="button-icon">&#9995;</p>
+        </button>
+
+        <button onclick="playGame(2)" class=" input-button scale-element ">
+            <p class=" button-icon">&#9996;</p>
+        </button>
+    </div>
+
+    <div class="result">
+        <p class="title" id="AIresult"></p>
+        <p class="title" id="result"></p>
+        <p class="title" id="score"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    background: radial-gradient(circle, rgb(255, 255, 255), 50%, rgb(137, 135, 153));
+    color: black;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-button {
+    background: radial-gradient(circle, rgb(57, 173, 136), 50%, rgb(37, 89, 66));
+    border: 3px solid white;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin-right: 20px;
+    border-color: grey;
+    box-shadow: black;
+    box-shadow: shadow 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-icon {
+    transition: transform 0.3s ease;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.button-icon:hover {
+    transform: scale(1.5);
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 60px;
+}
+
+.reset-score-button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.scale-element {
+    animation: scaleUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-element {
+    animation: fadeIn 1s ease-out forwards;
+}
