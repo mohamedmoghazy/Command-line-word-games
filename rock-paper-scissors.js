@@ -22,7 +22,7 @@ function getRandomHandSign()
 function playGame(playerChoice)
 {
   const computerChoice = getRandomHandSign();
-  document.getElementById('AIresult').textContent = inputMap[computerChoice];
+  document.getElementById('AIresult').innerHTML = "Cupter chose: " + inputMap[computerChoice] + "and you chose: " + inputMap[playerChoice];
 
   console.log(`Player choice: ${playerChoice} `);
   console.log(`Computer choice: ${computerChoice} `);
